@@ -196,26 +196,29 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.logo h1 + span:before {
-  width: 30px;
-  height: 3px;
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 23%;
-  background-color: black;
-  
+.logo span{
+  overflow: hidden;
+  text-align: center;
 }
-.logo h1 + span:after {
-  width: 30px;
-  height: 3px;
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 23%;
-  background-color: black;
-  
+
+.logo span:before,
+.logo span:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.logo span:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.logo span:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 .section-heading h2 {
