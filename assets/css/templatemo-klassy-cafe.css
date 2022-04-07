@@ -191,15 +191,19 @@ body {
   top: 8px;
   background-color: #E02D2D;
 }
-.flex{
+/* .flex{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+} */
+.logo{
+  text-align: center;
+  margin-top: 10px;
 }
 .logo span{
   overflow: hidden;
-  text-align: center;
+  font-size: 1.5rem;
 }
 
 .logo span:before,
@@ -207,19 +211,17 @@ body {
   background-color: #000;
   content: "";
   display: inline-block;
-  height: 1px;
+  height: 3px;
   position: relative;
   vertical-align: middle;
-  width: 50%;
+  width: 8%;
 }
 .logo span:before {
-  right: 0.5em;
-  margin-left: -50%;
+  right: 0.2em;
 }
 
 .logo span:after {
-  left: 0.5em;
-  margin-right: -50%;
+  left: 0.2em;
 }
 
 .section-heading h2 {
@@ -283,7 +285,6 @@ header
 .header-area .main-nav .logo {
   /* line-height: 100px; */
   color: black;
-  font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -294,8 +295,12 @@ header
   transition: all 0.3s ease 0s;
 }
 
-.background-header .main-nav .logo {
+/* .background-header .main-nav .logo {
   line-height: 75px;
+} */
+
+.background-header .logo{
+  margin-top: 0;
 }
 
 .background-header .nav {
