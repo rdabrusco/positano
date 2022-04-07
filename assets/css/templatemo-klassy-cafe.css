@@ -224,6 +224,7 @@ body {
   left: 0.2em;
 }
 
+
 .section-heading h2 {
   line-height: 40px;
   margin-top: 20px;
@@ -1539,6 +1540,12 @@ footer .right-text-content {
 
 footer .logo {
   text-align: center;
+  color: white;
+}
+footer .logo span:before,
+footer .logo span:after{
+  background-color: white;
+  width: 5%;
 }
 
 footer .right-text-content ul li {
@@ -1569,6 +1576,9 @@ footer .right-text-content ul li a {
 footer .right-text-content ul li a:hover {
   color: #2a2a2a;
 }
+
+
+
 
 /* 
 ---------------------------------------------
