@@ -1261,7 +1261,8 @@ reservation
 }
 
 #reservation .phone,
-#reservation .message {
+#reservation .message,
+#reservation .map {
   background-color: #fff;
   border-radius: 5px;
   text-align: center;
@@ -1521,11 +1522,13 @@ footer {
 }
 
 footer .left-text-content p {
-  margin-top: 5px;
+  margin-top: 35px;
   color: #fff;
   font-size: 14px;
   text-align: right;
+  text-transform: uppercase;
 }
+
 
 footer .right-text-content p {
   color: #fff;
@@ -1638,7 +1641,7 @@ responsive
   }
   footer .left-text-content p {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0;
   }
 }
 
