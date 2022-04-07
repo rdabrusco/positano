@@ -117,7 +117,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: 'Josephin Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 ::selection {
@@ -200,6 +200,7 @@ body {
 .logo{
   text-align: center;
   margin-top: 10px;
+  /* font-family: "Times" */ /* possible new logo font*/
 }
 .logo span{
   overflow: hidden;
@@ -1240,7 +1241,8 @@ reservation
   font-weight: 700;
 }
 
-#reservation .section-heading h6:before {
+#reservation .section-heading h6:before,
+#about .section-heading h6:before {
   background-color: #fff;
 }
 
