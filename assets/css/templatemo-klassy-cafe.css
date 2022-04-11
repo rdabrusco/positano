@@ -220,6 +220,7 @@ body {
   content: "";
   display: inline-block;
   height: 3px;
+  bottom: 3px;
   position: relative;
   vertical-align: middle;
   width: 8%;
