@@ -130,6 +130,13 @@ body {
   color: #fff;
 }
 
+#about *::selection {
+  background: black;
+}
+#about *::-moz-selection {
+  background: black;
+}
+
 @media (max-width: 991px) {
   html, body {
     overflow-x: hidden;

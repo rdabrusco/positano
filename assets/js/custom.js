@@ -1,7 +1,35 @@
 (function ($) {
-	
+	// if movement to the right is above a threshold, add to the counter.  if counter is above 10, scroll next.  
 	"use strict";
-
+	const owl = $('#mouse')
+	let counter = 0
+	let counterL = 0
+	owl.on('mousewheel', function(e){
+		
+		
+		if (e.deltaX > 0) {
+			counter++
+			console.log(counter)
+			if(counter === 11){
+				console.log('trying to go forward...')
+				console.log(e.deltaX, e.deltaY, e.deltaFactor);
+				owl.trigger('next.owl.carousel');
+				counter = 0
+			}
+			
+		}if(e.deltaX < 0) {
+			
+			counterL++
+			console.log(counterL)
+			if(counterL === 11){
+				console.log('trying to go backwards...')
+				owl.trigger('prev.owl');
+				console.log(e.deltaX, e.deltaY, e.deltaFactor)
+				counterL = 0;
+			}
+		}
+		e.preventDefault();
+	})
 	$(window).scroll(function() {
 	  var scroll = $(window).scrollTop();
 	  var box = $('.header-text').height();
@@ -145,7 +173,7 @@
 			$('.scroll-to-section a').each(function () {
 				$(this).removeClass('active');
 			})
-			$(this).addClass('active');
+			
 		  
 			var target = this.hash,
 			menu = target;
@@ -165,8 +193,8 @@
 	    $('.nav a').each(function () {
 	        var currLink = $(this);
 	        var refElement = $(currLink.attr("href"));
-	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-	            $('.nav ul li a').removeClass("active");
+	        if (refElement.position().top <= scrollPos) {
+	            $('ul li a').removeClass("active");
 	            currLink.addClass("active");
 	        }
 	        else{
