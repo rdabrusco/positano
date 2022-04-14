@@ -1256,8 +1256,10 @@ reservation
 #reservation .if-holder{
   position: relative;
   overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%
+  width: 50%;
+  border: 1px solid #2B292A;
+  border-radius: 10px;
+  
 }
 #reservation .responsive-iframe {
   position: absolute;
@@ -1284,7 +1286,7 @@ reservation
 }
 
 #reservation .phone,
-#reservation .message,
+#reservation .clock,
 #reservation .map {
   background-color: #fff;
   border-radius: 5px;
@@ -1293,7 +1295,7 @@ reservation
 }
 
 #reservation .phone i,
-#reservation .message i {
+#reservation .clock i {
   width: 70px;
   height: 70px;
   display: inline-block;
@@ -1310,7 +1312,7 @@ reservation
 }
 
 #reservation .phone h4,
-#reservation .message h4 {
+#reservation .clock h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 15px;
@@ -1318,17 +1320,28 @@ reservation
 }
 
 #reservation .phone span a,
-#reservation .message span a {
+#reservation .clock span a {
   font-size: 14px;
   color: #2a2a2a;
   transition: all .3s;
 }
 
 #reservation .phone span a:hover,
-#reservation .message span a:hover {
+#reservation .clock span a:hover {
   color: #E02D2D;
 }
+#reservation .column{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: space-between;
 
+}
+#reservation .no-wrap{
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  
+}
 #contact {
   margin-left: 30px;
   padding: 45px 30px;
