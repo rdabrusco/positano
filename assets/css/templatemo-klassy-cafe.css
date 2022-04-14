@@ -927,6 +927,10 @@ about
 
 #about .right-content .thumb {
   position: relative;
+  margin-bottom: 20px;
+}
+#about .right-content .thumb img{
+  border-radius: 10px;
 }
 
 #about .right-content .thumb a {
@@ -1148,12 +1152,14 @@ chefs
 
 #chefs .chef-item .thumb {
   position: relative;
+  
 }
 
 #chefs .chef-item .thumb img {
   width: 100%;
   overflow: hidden;
   position: relative;
+  
 }
 
 #chefs .chef-item .thumb .overlay {
