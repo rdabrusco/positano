@@ -240,5 +240,6 @@
 		});
 	}
 
-
+	// let card1 = $('#card1')
+	// card1.poptrox()
 })(window.jQuery);
