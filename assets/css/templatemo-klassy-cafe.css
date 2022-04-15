@@ -454,7 +454,7 @@ header
   text-indent: -9999em;
   z-index: 99;
   right: 40px;
-  /* display: none; */
+  display: none;
 }
 
 .background-header .main-nav .menu-trigger {
@@ -606,7 +606,7 @@ header
   .header-area .logo {
     margin-left: 30px;
   }
-  .header-area .menu-trigger {
+  .header-area .container .menu-trigger {
     display: block;
   }
   @media (max-width: 420px) {
