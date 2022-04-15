@@ -611,11 +611,14 @@ header
   }
   @media (max-width: 420px) {
     .header-area .logo{
-      margin: 0 auto;
+      margin: 10px auto;
       width: 100%;
     }
     .header-area .container .main-nav .menu-trigger {
       display: none;
+    }
+    .background-header .logo{
+      margin: 0 auto;
     }
   }
   .header-area .main-nav {
