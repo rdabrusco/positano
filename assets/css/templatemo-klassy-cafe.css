@@ -611,7 +611,7 @@ header
   }
   @media (max-width: 420px) {
     .header-area .logo{
-      margin: 10px auto;
+      margin: 0 auto;
       width: 100%;
     }
     .header-area .container .main-nav .menu-trigger {
