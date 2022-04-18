@@ -571,6 +571,12 @@ header
   color: #E02D2D;
 }
 
+#about .container{
+  max-width: 85%;
+}
+#about .row {
+  align-items: center;
+}
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 12px;
@@ -578,6 +584,19 @@ header
   }
   .header-area .main-nav:before {
     display: none;
+  }
+  /* #about .row{
+    flex-direction: column;
+  } */
+}
+
+@media (max-width: 1000px){
+  #about .row{
+    flex-direction: column;
+  }
+  #about .row .col-lg-6{
+    flex: 1;
+    max-width: 100%;
   }
 }
 
@@ -1351,7 +1370,7 @@ reservation
 
 #reservation {
   margin-top: 120px;
-  padding: 120px 0px;
+  padding: 120px 25px;
   background-image: url(../images/reservation-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
