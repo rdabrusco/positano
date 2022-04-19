@@ -1066,6 +1066,15 @@ menu
 .card:hover .info.short:before {
   transform: translateY(225px) translateZ(0);
 }
+@media (max-width: 1000px){
+  .card2:hover .info,
+  .card2:hover .info:before,
+  .card4:hover .info,
+  .card4:hover .info:before {
+    transform: translateY(225px) translateZ(0);
+    }
+  }
+  
 
 .title {
   margin: 0;
