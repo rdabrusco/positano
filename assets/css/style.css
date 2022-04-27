@@ -1396,7 +1396,8 @@ reservation
 }
 
 #reservation .phone i,
-#reservation .clock i {
+#reservation .clock i,
+#reservation .map i {
   width: 70px;
   height: 70px;
   display: inline-block;
@@ -1413,7 +1414,8 @@ reservation
 }
 
 #reservation .phone h4,
-#reservation .clock h4 {
+#reservation .clock h4,
+#reservation .map h4  {
   font-size: 20px;
   font-weight: 700;
   margin-top: 15px;
@@ -1421,14 +1423,16 @@ reservation
 }
 
 #reservation .phone span a,
-#reservation .clock span a {
+#reservation .clock span a,
+#reservation .map span a  {
   font-size: 20px;
   color: #2a2a2a;
   transition: all .3s;
 }
 
 #reservation .phone span a:hover,
-#reservation .clock span a:hover {
+#reservation .clock span a:hover,
+#reservation .map span a:hover {
   color: #E02D2D;
 }
 #reservation .column{
@@ -1447,7 +1451,7 @@ reservation
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height:500px;
+  height:550px;
 }
 
 @media screen and (max-width:992px){
@@ -1465,9 +1469,9 @@ reservation
   #reservation .column{
     width: 100%;
   }
-  #reservation .phone{
+  /* #reservation .phone{
     margin-bottom: 0;
-  }
+  } */
 }
   
 
@@ -1791,7 +1795,7 @@ responsive
   #chefs .chef-item {
     margin-bottom: 30px;
   }
-  #reservation .phone {
+  #reservation .phone, #reservation .map {
     margin-bottom: 60px;
   }
   #contact {
