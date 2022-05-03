@@ -1023,22 +1023,22 @@ menu
 }
 
 .card1 {
-  background-image: url(../../img/food1-temp.jpeg);
+  background-image: url(../../img/pasta.jpg);
   background-position: bottom;
 }
 .card2 {
-  background-image: url(../../img/food2-temp.jpeg);
+  background-image: url(../../img/veggies.jpg);
   background-position: bottom;
 }
 .card3 {
-  background-image: url(../../img/food3-temp.jpeg);
+  background-image: url(../../img/seafood.jpg);
 }
 .card4 {
-  background-image: url(../../img/food4-temp.jpeg);
+  background-image: url(../../img/chop.jpg);
   background-position: bottom;
 }
 .card5 {
-  background-image: url(../../img/food5-temp.jpeg);
+  background-image: url(../../img/cannoli.jpg);
   background-position: bottom;
 }
 
