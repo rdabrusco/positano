@@ -1060,18 +1060,18 @@ menu
 /* THESE TWO ARE WHAT CONTROLS WHERE THE BOTTOM OF THE RED INFO BOX IS*/
 .card:hover .info,
 .card:hover .info:before {
-  transform: translateY(200px) translateZ(0);
+  transform: translateY(300px) translateZ(0);
 }
 .card:hover .info.short,
 .card:hover .info.short:before {
-  transform: translateY(225px) translateZ(0);
+  transform: translateY(330px) translateZ(0);
 }
 @media (max-width: 1000px){
   .card2:hover .info,
   .card2:hover .info:before,
   .card4:hover .info,
   .card4:hover .info:before {
-    transform: translateY(225px) translateZ(0);
+    transform: translateY(325px) translateZ(0);
     }
   }
   
