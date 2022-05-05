@@ -1031,7 +1031,8 @@ menu
   background-position: bottom;
 }
 .card3 {
-  background-image: url(../../img/seafood.jpg);
+  background-image: url(../../img/ice-cream.png);
+  background-position: center
 }
 .card4 {
   background-image: url(../../img/chop.jpg);
@@ -1043,9 +1044,41 @@ menu
 }
 
 .card6{
-  background-image: url(../images/menu-item-01.jpg)
+  background-image: url(../../img/bread.png);
+  background-position: 80%;
   
 }
+.card7{
+  background-image: url(../../img/eggplant.jpg)
+  
+}
+.card8{
+  background-image: url(../../img/pollo-scar.png)
+  
+}
+.card9{
+  background-image: url(../../img/cake.jpg)
+  
+}
+.card10{
+  background-image: url(../../img/mussels.jpg)
+  
+}
+.card11{
+  background-image: url(../../img/drink.jpg)
+  
+}
+.card12{
+  background-image: url(../../img/seafood.jpg);
+  background-position: center;
+  
+}
+.card13{
+  background-image: url(../../img/tiramisu.jpg);
+  background-position: center
+  
+}
+
 
 .info {
   position: relative;
