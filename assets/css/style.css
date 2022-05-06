@@ -1027,7 +1027,7 @@ menu
   background-position: bottom;
 }
 .card2 {
-  background-image: url(../../img/veggies.jpg);
+  background-image: url(../../img/antipasto.jpg);
   background-position: bottom;
 }
 .card3 {
@@ -1044,8 +1044,8 @@ menu
 }
 
 .card6{
-  background-image: url(../../img/bread.png);
-  background-position: 80%;
+  background-image: url(../../img/people.png);
+  background-position: 60%;
   
 }
 .card7{
@@ -1053,8 +1053,8 @@ menu
   
 }
 .card8{
-  background-image: url(../../img/pollo-scar.png)
-  
+  background-image: url(../../img/table.jpg);
+  background-position: left;
 }
 .card9{
   background-image: url(../../img/cake.jpg)
@@ -1078,6 +1078,16 @@ menu
   background-position: center
   
 }
+.card14{
+  background-image: url(../../img/enzo.jpg);
+  background-position: center
+  
+}.card15{
+  background-image: url(../../img/ciro.png);
+  background-position: center
+  
+}
+
 
 
 .info {
