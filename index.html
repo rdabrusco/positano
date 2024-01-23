@@ -61,6 +61,7 @@
                            	
                             <li class="scroll-to-section"><a href="#menu">Menu</a></li>
                             <li class="scroll-to-section"><a href="#reservation">Reservations</a></li> 
+                            <li class="scroll-to-section"><a href="https://www.facebook.com/positanoitalianrestaurant/">Like us on Facebook!  <i class="fa-solid fa-thumbs-up"></i></a></li> 
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -70,6 +71,7 @@
                 </div>
             </div>
         </div>
+
     </header>
     <!-- ***** Header Area End ***** -->
 
@@ -130,7 +132,9 @@
                 
             <div class="section-heading">
                 <h6>Our Menu</h6>
-                <h2><a href="assets/menu/menu.pdf" class="full-menu" id="full-menu" >FULL MENU</a></h2>   
+                <h2><a href="assets/menu/menu.pdf" rel="noopener noreferrer" target="_blank" class="full-menu" id="full-menu" >FULL MENU</a></h2>   
+                <h2><a href="assets/menu/holiday-menu.jpg" class="full-menu" id="seasonal-menu" >HOLIDAY MENU</a></h2>  
+                <h2><a href="assets/menu/positanoPrivateEvents.pdf" rel="noopener noreferrer" target="_blank" class="full-menu w-50">Available for Lunch, Private Events</a></h2> 
             </div>
 
         </div>
@@ -274,11 +278,29 @@
                 <h6>Reservations</h6>
                         
             </div>
-                        
+                       
+            
+
             <div class="row no-wrap">
-                
+
+                      
+
+                <section class="if-holder bg-white">
+                   
+                    <iframe
+                    class='responsive-iframe'
+                    id="opentable"
+                    scrolling="yes"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.opentable.com/r/positano-reservations-boca-raton-boca-raton?restref=220459&lang=en-US&ot_source=Restaurant%20website">
+                    </iframe>
+                </section>     
+               
                 
                 <section class="if-holder">
+
+                   
+                
                     <iframe
                     class='responsive-iframe'
                     allowfullscreen
@@ -293,11 +315,11 @@
                         <div class="map">
                             <i class="fa-solid fa-location-dot"></i>
                             <h4>Address</h4>
-                            <span><a href="https://goo.gl/maps/de66pQQm3eAE6Gwm9"> N Federal Hwy #190, Boca Raton, FL 33431</a></span>
+                            <span><a href="https://goo.gl/maps/de66pQQm3eAE6Gwm9"> 4400 N Federal Highway Suite #190, Boca Raton, FL 33431</a></span>
                         </div>
                         <div class="phone">
                             <i class="fa fa-phone"></i>
-                            <h4>To make a reservation. please call:</h4>
+                            <h4>To make a reservation, please call:</h4>
                             <span><a href="tel:1-561-391-2120">+1-561-391-2120</a></span>
                         </div>
                          <div class="clock">
@@ -365,6 +387,7 @@
     <script src="assets/js/isotope.js"></script> 
     <script src="assets/js/jquery-mousewheel.js"></script>
     <script src="assets/js/jquery.poptrox.js"></script>
+    <!-- <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=220459&type=standard&theme=standard&color=1&iframe=true&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website'></script> -->
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
@@ -384,6 +407,22 @@
             });
         });
 
+    </script>
+    <script>
+        // Wait for the iframe to load
+        document.getElementById("opentable").addEventListener("load", function() {
+            // Get the iframe's content document
+            var iframeDocument = this.contentDocument || this.contentWindow.document;
+            
+            // Find and remove the close button (replace ".close-button" with the appropriate selector)
+            var closeButton = iframeDocument.querySelector(".styled__Button-sc-15k6e6x-1 ");
+            console.log(closeButton)
+            var signInButton = iframeDocument.querySelector(".styled__Link-sc-yys3lt-0")
+            if (signInButton) {
+                signInButton.remove();
+            }
+
+        });
     </script>
   </body>
 </html>
