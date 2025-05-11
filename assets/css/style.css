@@ -1405,6 +1405,16 @@ reservation
   border-radius: 10px;
   
 }
+
+#reservation .reservation-holder {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.reservation-holder h1 {
+  color: white !important;
+}
 #reservation .responsive-iframe {
   position: absolute;
   top: 0;
@@ -1488,13 +1498,18 @@ reservation
 #reservation .no-wrap{
   flex-wrap: nowrap;
   justify-content: space-between;
+  gap: 15px;
   
 }
 #reservation .boxes{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height:550px;
+  justify-content: space-between;
+  height:500px;
+}
+
+.w-50 {
+  width: 50%;
 }
 
 @media screen and (max-width:992px){
@@ -1511,6 +1526,9 @@ reservation
   }
   #reservation .column{
     width: 100%;
+  }
+  #reservation .boxes{
+    margin-left: 0;
   }
   /* #reservation .phone{
     margin-bottom: 0;
@@ -1799,8 +1817,23 @@ footer .right-text-content ul li a:hover {
   color: #2a2a2a;
 }
 
+.text-white { 
+  color: white;
+}
 
+.flex-row {
+  display: flex;
+}
 
+.flex-column {
+  flex-direction: column;
+}
+
+.absolute {
+  position: absolute;
+  top: 38%;
+  right: 3%;
+}
 
 /* 
 ---------------------------------------------
