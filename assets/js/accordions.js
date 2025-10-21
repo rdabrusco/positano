@@ -10029,13 +10029,13 @@ colors = jQuery.Color.names = {
 	red: "#ff0000",
 	silver: "#c0c0c0",
 	teal: "#008080",
-	white: "#ffffff",
-	yellow: "#ffff00",
+	white: "#E7D3BBfff",
+	yellow: "#E7D3BBf00",
 
 	// 4.2.3. "transparent" color keyword
 	transparent: [ null, null, null, 0 ],
 
-	_default: "#ffffff"
+	_default: "#E7D3BBfff"
 };
 
 })( jQuery );
@@ -11183,7 +11183,7 @@ var effectHighlight = $.effects.effect.highlight = function( o, done ) {
 		.show()
 		.css({
 			backgroundImage: "none",
-			backgroundColor: o.color || "#ffff99"
+			backgroundColor: o.color || "#E7D3BBf99"
 		})
 		.animate( animation, {
 			queue: false,

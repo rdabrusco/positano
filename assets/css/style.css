@@ -121,12 +121,12 @@ body {
 }
 
 ::selection {
-  background: #E02D2D;
+  background: #5C7429;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #E02D2D;
+  background: #5C7429;
   color: #fff;
 }
 
@@ -155,7 +155,7 @@ body {
 
 .main-white-button a {
   font-size: 13px;
-  color: #E02D2D;
+  color: #5C7429;
   background-color: #fff;
   padding: 12px 25px;
   display: inline-block;
@@ -182,7 +182,7 @@ body {
 .section-heading h6 {
   position: relative;
   font-size: 15px;
-  color: #E02D2D;
+  color: #000000;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -196,7 +196,7 @@ body {
   position: absolute;
   left: 0;
   top: 8px;
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
 }
 /* .flex{
   display: flex;
@@ -266,15 +266,15 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #E02D2D!important;
+  color: #5C7429!important;
 }
 
 .background-header .nav li a.active {
-  color: #E02D2D!important;
+  color: #5C7429!important;
 }
 
 .header-area {
-  background-color: #fff;
+  background-color: #EAD6BA;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -361,12 +361,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #E02D2D!important;
+  color: #5C7429!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #E02D2D!important;
+  color: #5C7429!important;
   opacity: 1;
 }
 
@@ -428,7 +428,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #E02D2D!important;
+  color: #5C7429!important;
   padding-left: 25px;
 }
 
@@ -446,7 +446,7 @@ header
 
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
-  display: block;
+  /* display: block; */
   position: absolute;
   top: 33px;
   width: 32px;
@@ -567,8 +567,12 @@ header
   margin-top: 30px;
 }
 
+.header-area .menu-trigger {
+  display:block
+}
+
 .header-area.header-sticky .nav li a.active {
-  color: #E02D2D;
+  color: #5C7429;
 }
 
 #about .container{
@@ -583,12 +587,21 @@ header
     padding-right: 12px;
   }
   .header-area .main-nav:before {
-    display: none;
+    /* display: none; */
   }
+  .header-area .nav {
+  display: none;
+}
+
+  .header-area .container .menu-trigger {
+    display: block;
+  }
+
   /* #about .row{
     flex-direction: column;
   } */
 }
+
 
 @media (max-width: 1000px){
   #about .row{
@@ -606,7 +619,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #E02D2D!important;
+    color: #5C7429!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -676,7 +689,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #E02D2D!important;
+    color: #5C7429!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -840,7 +853,7 @@ banner
   right:30px;
   width: 50px;
   height: 50px;
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
   border:0 none;
   line-height: 44px;
   border-radius: 50%;
@@ -869,7 +882,7 @@ banner
   left:30px;
   width: 50px;
   height: 50px;
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
   border:0 none;
   line-height: 44px;
   border-radius: 50%;
@@ -931,12 +944,16 @@ about
   padding: 100px 0px 0px 0px;
   position: relative;
   z-index: 9;
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
 }
 
 #about p, #about h6, #about h2{
-  color: white;
+  color: #000000;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+#about h6 {
+  margin-bottom: 15px;
 }
 #about p{
   font-size: 18px;
@@ -977,7 +994,7 @@ about
   display: inline-block;
   line-height: 70px;
   text-align: center;
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
   color: #fff;
   border-radius: 50%;
   transform: translate(-35px, -35px);
@@ -997,7 +1014,7 @@ menu
 
 #menu {
 
-  background-color: #fffafa;
+  background-color: #E7D3BB;
   padding: 120px 0px;
 }
 
@@ -1093,8 +1110,8 @@ menu
 .info {
   position: relative;
   width: 100%;
-  background-color: #E02D2D;
-  border: 1px solid #E02D2D;
+  background-color: #5C7429;
+  border: 1px solid #5C7429;
   transform: translateY(350%)
   translateY(140px)
   translateZ(0);
@@ -1124,7 +1141,7 @@ menu
   padding: 30px 30px 20px 30px;
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color: #000000;
 }
 
 .description {
@@ -1136,7 +1153,7 @@ menu
   position: absolute;
   width: 70px;
   height: 70px;
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
@@ -1180,7 +1197,7 @@ menu
 #menu .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #E02D2D;
+  color: #000000;
   font-size: 25px;
   font-weight: 700;
   content: '\f104';
@@ -1212,7 +1229,7 @@ menu
 #menu .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #E02D2D;
+  color: #000000;
   font-size: 25px;
   font-weight: 700;
   content: '\f105';
@@ -1221,8 +1238,8 @@ menu
 .full-menu{
   display:block;
   text-align:center;
-  color:white;
-  background-color:#E02D2D;
+  color: #000000;
+  background-color:#5C7429;
   border-radius: 5px;
   width: 20%;
   padding: 1% 1% 0;
@@ -1246,7 +1263,7 @@ menu
 }
 
 .full-menu:hover{
-  color: white;
+  color: #fff;
 }
 
 
@@ -1281,11 +1298,11 @@ chefs
 }
 
 #chefs .chef-item:hover {
-  border-color: #E02D2D;
+  border-color: #5C7429;
 }
 
 #chefs .chef-item:hover .down-content h4 {
-  color: #E02D2D;
+  color: #5C7429;
 }
 
 #chefs .chef-item .thumb {
@@ -1344,7 +1361,7 @@ chefs
 }
 
 #chefs .chef-item .thumb ul.social-icons li a:hover {
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
 }
 
 #chefs .chef-item:hover .overlay {
@@ -1395,7 +1412,7 @@ reservation
 
 #reservation .section-heading h6:before,
 #about .section-heading h6:before {
-  background-color: #fff;
+  background-color: #000000;
 }
 #reservation .if-holder{
   position: relative;
@@ -1413,7 +1430,7 @@ reservation
 }
 
 .reservation-holder h1 {
-  color: white !important;
+  color: #000000 !important;
 }
 #reservation .responsive-iframe {
   position: absolute;
@@ -1457,7 +1474,7 @@ reservation
   text-align: center;
   line-height: 70px;
   color: #fff;
-  background-color: #E02D2D;
+  background-color: #F60000;
   border-radius: 50%;
   font-size: 24px;
   margin-top: -35px;
@@ -1486,7 +1503,7 @@ reservation
 #reservation .phone span a:hover,
 #reservation .clock span a:hover,
 #reservation .map span a:hover {
-  color: #E02D2D;
+  color: #5C7429;
 }
 #reservation .column{
   display: flex;
@@ -1584,14 +1601,14 @@ reservation
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form select:focus {
-  border-color: #E02D2D;
+  border-color: #5C7429;
 }
 
 .contact-form button {
   margin-top: -10px;
   font-size: 13px;
   color: #fff;
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
   padding: 12px 25px;
   width: 100%;
   box-shadow: none;
@@ -1683,7 +1700,7 @@ offers
   margin: 0 auto 15px auto;
 }
 #offers #tabs ul .ui-tabs-active a {
-  color: #E02D2D;
+  color: #5C7429;
   position: relative;
 }
 #offers #tabs ul .ui-tabs-active span {
@@ -1733,7 +1750,7 @@ offers
   right: 0;
   width: 70px;
   height: 70px;
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
   display: inline-block;
   text-align: center;
   line-height: 70px;
@@ -1753,12 +1770,12 @@ footer
 footer {
   /* margin-top: 60px; */
   padding: 50px 0px;
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
 }
 
 footer .left-text-content p {
   margin-top: 35px;
-  color: #fff;
+  color: #000000;
   font-size: 14px;
   text-align: right;
   text-transform: uppercase;
@@ -1780,11 +1797,11 @@ footer .right-text-content {
 
 footer .logo {
   text-align: center;
-  color: white;
+  color: #000000;
 }
 footer .logo span:before,
 footer .logo span:after{
-  background-color: white;
+  background-color: #000000;
   width: 5%;
 }
 
@@ -1806,7 +1823,7 @@ footer .right-text-content ul li a {
   font-size: 20px;
   background-color: #fff;
   border-radius: 50%;
-  color: #E02D2D;
+  color: #5C7429;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -1818,7 +1835,7 @@ footer .right-text-content ul li a:hover {
 }
 
 .text-white { 
-  color: white;
+  color: #000000;
 }
 
 .flex-row {
@@ -1901,7 +1918,7 @@ responsive
 
 #preloader {
   overflow: hidden;
-  background-color: #E02D2D;
+  background-color: #E7D3BB;
   left: 0;
   right: 0;
   top: 0;
@@ -1924,7 +1941,7 @@ responsive
 }
 
 #preloader .jumper > div {
-  background-color: #fff;
+  background-color: #5C7429;
   width: 10px;
   height: 10px;
   border-radius: 100%;
