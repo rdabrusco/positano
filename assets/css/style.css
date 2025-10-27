@@ -1040,8 +1040,8 @@ menu
 }
 
 .card1 {
-  background-image: url(../../img/pasta.jpg);
-  background-position: bottom;
+  background-image: url(../../img/salad.jpg);
+  background-position: center;
 }
 .card2 {
   background-image: url(../../img/antipasto.jpg);
@@ -1053,7 +1053,7 @@ menu
 }
 .card4 {
   background-image: url(../../img/chop.jpg);
-  background-position: bottom;
+  background-position: center;
 }
 .card5 {
   background-image: url(../../img/cannoli.jpg);
@@ -1066,11 +1066,11 @@ menu
   
 }
 .card7{
-  background-image: url(../../img/eggplant.jpg)
+  background-image: url(../../img/seafood2.jpg)
   
 }
 .card8{
-  background-image: url(../../img/table.jpg);
+  background-image: url(../../img/patio.jpg);
   background-position: left;
 }
 .card9{
@@ -1091,7 +1091,7 @@ menu
   
 }
 .card13{
-  background-image: url(../../img/tiramisu.jpg);
+  background-image: url(../../img/drink2.jpg);
   background-position: center
   
 }
@@ -1100,7 +1100,7 @@ menu
   background-position: center
   
 }.card15{
-  background-image: url(../../img/chef.png);
+  background-image: url(../../img/chef.jpg);
   background-position: center
   
 }
