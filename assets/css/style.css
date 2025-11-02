@@ -782,7 +782,11 @@ banner
 */
 
 #top {
-  padding-top: 100px;
+  /* padding-top: 100px; */
+}
+
+.background-header + #top {
+  padding-top: 80px;
 }
 
 #top .col-lg-4,
