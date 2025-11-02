@@ -642,7 +642,7 @@ header
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .header-area .logo img {
-    height: 250px;
+    height: 250px !important;
   }
 }
 
