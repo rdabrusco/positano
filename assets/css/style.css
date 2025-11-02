@@ -465,7 +465,7 @@ header
   cursor: pointer;
   /* display: block; */
   position: absolute;
-  top: 33px;
+  /* top: 33px; */
   width: 32px;
   height: 40px;
   text-indent: -9999em;
@@ -642,9 +642,15 @@ header
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .header-area .logo img {
-    height: 140px !important;
+    height: 250px;
   }
 }
+
+.background-header .logo img {
+  height: 80px;       /* Smaller once user scrolls */
+  width: auto;
+} 
+
 
 
 
@@ -686,6 +692,28 @@ header
   .header-area .container .menu-trigger {
     display: block;
   }
+
+  .header-area .logo img {
+  display: block;
+  height: 140px;      /* Make it larger at the top */
+  width: auto;
+  transition: all 0.3s ease; /* smooth size transition */
+}
+
+/* When scrolled (background-header is added) — shrink it */
+.background-header .logo img {
+  height: 80px;       /* Smaller once user scrolls */
+  width: auto;
+}
+
+.header-area .logo {
+  display: flex;
+  align-items: center;
+  height: 100%; /* take full height of the header */
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
   @media (max-width: 420px) {
     .header-area .logo{
       margin: 10px auto;
