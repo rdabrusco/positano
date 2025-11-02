@@ -1932,6 +1932,9 @@ responsive
   right: 0;
   top: 0;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 99999;
   color: #fff;
@@ -1943,25 +1946,31 @@ responsive
   right: 0;
   bottom: 0;
   display: block;
-  position: absolute;
+  position: relative;
   margin: auto;
-  width: 50px;
-  height: 50px;
+  width: 250px;
+  height: 250px;
+  /* background-image: url(../../img/positano-logo.png); */
+
 }
 
 #preloader .jumper > div {
-  background-color: #5C7429;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
+  /* background-color: #5C7429; */
+  background-image: url(../../img/splash.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 100%; */
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   position: absolute;
-  opacity: 0;
-  width: 50px;
-  height: 50px;
-  -webkit-animation: jumper 1s 0s linear infinite;
-  animation: jumper 1s 0s linear infinite;
+  opacity: .5;
+  /* width: 250px;
+  height: 250px; */
+  /* -webkit-animation: jumper 1s 0s linear infinite; */
+  /* animation: jumper 1s 0s linear infinite; */
 }
 
 #preloader .jumper > div:nth-child(2) {
